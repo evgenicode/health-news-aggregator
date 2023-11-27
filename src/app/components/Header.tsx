@@ -12,18 +12,20 @@ const Header = () => {
   };
 
   return (
-    <header className="md:relative md:container md:mx-auto p-3 sm:mb-1 md:mb-4 bg-sky-700 lg:w-[900px]">
+    <header className="md:relative md:container md:mx-auto p-3 sm:mb-1 md:mb-4 bg-sky-700 lg:w-[900px] ">
       <div className="flex items-center justify-between">
-        <div className="pt-0">
-          {/* <img src="logoWhiteText.png" alt="logo" className="h-10" /> */}
-          HealthNews
-        </div>
+        <Link
+          href="/"
+          className="hover:text-blue-300 text-slate-100 text-xl pl-4"
+        >
+          HealthSpan
+        </Link>
 
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-blue-300 text-slate-100">
             Home
           </Link>
-          <Link href="/" className="hover:text-blue-300 text-slate-100">
+          <Link href="/about" className="hover:text-blue-300 text-slate-100">
             About
           </Link>
           <Link href="/trending" className="hover:text-blue-300 text-slate-100">
